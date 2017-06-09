@@ -40,7 +40,7 @@
     * GoldenGate - Replication Managment for Oracle DB
     * Oracle Express - Just for dev
 * SQLServer
-    * Lightspeed - https://www.quest.com/products/litespeed-for-sql-server/
+    * Litespeed - https://www.quest.com/products/litespeed-for-sql-server/
         * Fast backup and recovery sol'n
 		
 	

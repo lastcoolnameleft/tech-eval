@@ -1,3 +1,9 @@
+* Kubernetes - Container Orchestrator
+    * Terms
+        * Pod
+            * building block
+            * Usually one container on a host (could be more; rare)
+            * Gets unique IP addr
 * Rancher - http://rancher.com/
     * Container Mgmt/Orchestrator Deployment
 	* Not OSS
@@ -31,3 +37,5 @@
 		* Upload project to k8s cluster
 		* Instead of “forge deploy”, Draft watches your project to upload
         * Draft also doesn’t require an extra manifest file.
+* Dump-Init - https://github.com/Yelp/dumb-init
+    * minimal init system for Linux containers

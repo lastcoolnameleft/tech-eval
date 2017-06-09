@@ -14,3 +14,11 @@
     * By Hashicorp
     * Create identical machine images for multiple platforms from single config
     * EC2, Azure, Docker, Google Compute Engine, OSTK, QEMU (Both KVM & Xen), VirtualBox, VMWare
+* Terraform
+    * By Hashicorp
+    * Uses own format to define resources to then upload to provider
+    * Can "plan" file before uploading to preview changes
+    * After planning config, apply to commit
+    * Azure
+        * Walkthrough: https://blogs.msdn.microsoft.com/eugene/2016/11/03/creating-azure-resources-with-terraform/
+        * If deploy failed, usually easier to delete resource group and try again
