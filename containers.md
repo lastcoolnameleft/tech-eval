@@ -4,6 +4,9 @@
             * building block
             * Usually one container on a host (could be more; rare)
             * Gets unique IP addr
+        * Job
+            * Runs till completion
+            * Job name must be unique
 * Rancher - http://rancher.com/
     * Container Mgmt/Orchestrator Deployment
 	* Not OSS
