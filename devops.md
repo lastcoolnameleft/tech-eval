@@ -22,3 +22,8 @@
     * Azure
         * Walkthrough: https://blogs.msdn.microsoft.com/eugene/2016/11/03/creating-azure-resources-with-terraform/
         * If deploy failed, usually easier to delete resource group and try again
+        * Some feature gaps for Azure
+            * Monitoring Alerts do not work
+* Bitbucket - OnPrem Git Server
+    * https://www.atlassian.com/software/bitbucket/server
+    * By Atlassian
