@@ -27,3 +27,13 @@
 * Bitbucket - OnPrem Git Server
     * https://www.atlassian.com/software/bitbucket/server
     * By Atlassian
+* Ansible - OSS Automation Platform
+    * Competitors: Puppet, Chef
+    * Functions: Config Mgmt, App Deployment, Task Automation
+    * Tower: GUI for CLI
+    * Concept:
+        * Playbook: declarative file to configure host
+* Cloudforms - Manage container, virtual, private, and public cloud infrastructures
+    * Manager of managers
+    * https://www.redhat.com/en/technologies/management/cloudforms
+    * Aggregate from other services (AWS, Azure, etc)
