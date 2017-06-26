@@ -7,6 +7,10 @@
         * Job
             * Runs till completion
             * Job name must be unique
+* Helm
+    * Concept:
+        * Chart - Package to run
+        * Tiller
 * Rancher - http://rancher.com/
     * Container Mgmt/Orchestrator Deployment
 	* Not OSS
@@ -42,3 +46,11 @@
         * Draft also doesn’t require an extra manifest file.
 * Dump-Init - https://github.com/Yelp/dumb-init
     * minimal init system for Linux containers
+* Istio - platform-independent service mesh
+    * https://istio.io
+    * Initially for K8S
+    * Provides traffic management, policy enforcement, and telemetry collection.
+    * Connect, Manage and Secure Microservices
+    * Demo:  Tried to get working, but his issue setting up RBAC:
+        * Step 4, workaround didn't work:
+            * https://istio.io/docs/tasks/installing-istio.html

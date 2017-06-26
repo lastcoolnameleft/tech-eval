@@ -18,8 +18,7 @@
     * Similar to artifactory
 * Fluentd - http://www.fluentd.org/
     * OSS data collector for unified logging layer
-* Jenkins - OSS CI tool
-* Spinnaker - OSS CD tool
 * Firebase - Mobile platform for rapid development (Google)
-
+* USBRedir - protocol for sending usb device traffic over a network connection
+    * https://www.spice-space.org/page/UsbRedir
 
