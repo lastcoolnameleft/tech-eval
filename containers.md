@@ -1,3 +1,37 @@
+* Docker
+    * Tools
+        * Docker Image - Snapshot of a container
+        * Docker Container - A running instance of a Docker Image
+        * Docker Engine - Creates and runs containers (aka Docker Daemon)
+        * Docker Compose - Tool for defining and running multi-container Docker apps
+            * Uses docker-compose.yml
+        * Docker Client - CLI to interact with Engine via REST
+        * Docker Hub - SaaS Docker Image Repository
+        * Docker Cloud - Hosted management service
+            * Manage: builds, images, swarms, infrastructure, nodes, registry
+        * Docker Datacenter - Creates CaaS platform from on-premesis
+        * Docker for Mac - Easy to install native, Docker Development Env.
+            * Uses macOS Hypervisor framework, networking and filesys
+            * Supercedes Docker Toolbox
+        * Docker for Windows - Easy to install native, Docker Development Env.
+            * Works with Win10 + Win Serv 2016, Uses MSFT Hyper-V
+            * Supercedes Docker Toolbox
+        * Docker Enterprise Edition (EE) - Platform and Support for Enterprise solutions
+            * Includes Docker Trusted Registry, Docker Datacenter, security framework
+            * https://docs.docker.com/enterprise/
+        * Docker Registry - Docker image repository
+        * Docker Store - Store for Trusted Docker images
+        * Docker Swarm - Standalone clustering tool
+            * Pools docker hosts and exposes as one
+        * Docker Machine - CLI tool for managing hosts with Docker Engine
+    * Legacy
+        * Swarm Mode - Cluster Mgmt + orchestrator
+            * Replaced by Docker Swarm
+        * Docker Toolbox - Installs Docker Engine, Docker Compose, Docker Machine, Kitematic 
+            * Replaced by Docker for Win/Mac
+        * boot2docker - lighteight Linux distro for Mac & Win
+            * Replaced by Docker-machine
+        * Kitematic - GUI for managing Containers
 * Kubernetes - Container Orchestrator
     * Terms
         * Pod
@@ -54,3 +88,23 @@
     * Demo:  Tried to get working, but his issue setting up RBAC:
         * Step 4, workaround didn't work:
             * https://istio.io/docs/tasks/installing-istio.html
+* Calico - container networking provider and network policy engine
+    * https://www.projectcalico.org//
+    * provides network policy solution for connecting Kubernetes pods
+    * can be deployed without encapsulation or overlays. 
+    * provides security policy for Kubernetes pods via its distributed firewall.
+    * can also be run in policy enforcement mode in conjunction with other networking solutions such as Flannel, aka canal
+* Flannel - network fabric for containers, designed for Kubernetes
+    * https://github.com/coreos/flannel#flannel
+    * virtual network that gives a subnet to each host for use with container runtimes
+        * Kubernetes assume that each container (pod) has a unique, routable IP inside the cluster
+        * this reduces the complexity of doing port mapping
+* Canal -  Policy based networking for cloud native applications
+    * https://github.com/projectcalico/canal
+    * allow users to easily deploy Calico and flannel networking together as a unified networking solution
+* Aqua - Container Security Company
+    * Image Assurance
+    * Thread Mitigation
+    * Runtime Profile
+    * Container Firewall
+    * User access control
