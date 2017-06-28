@@ -68,7 +68,6 @@
     * Network fabric for containers, designed for K8S
     * By CoreOS
     * Gives a subnet to each host for use with container runtimes
-
 * Source-to-image - https://github.com/openshift/source-to-image
 	* Builds docker images from source
     * Kinda like Draft, but a lot less features
@@ -82,24 +81,27 @@
     * minimal init system for Linux containers
 * Istio - platform-independent service mesh
     * https://istio.io
-    * Initially for K8S
-    * Provides traffic management, policy enforcement, and telemetry collection.
+    * Initially for K8S (uses sidecars)
     * Connect, Manage and Secure Microservices
-    * Demo:  Tried to get working, but his issue setting up RBAC:
-        * Step 4, workaround didn't work:
-            * https://istio.io/docs/tasks/installing-istio.html
-* Calico - container networking provider and network policy engine
+    * Features
+        * Traffic management
+            * Config Route Request - route based upon src/dest/header/cookie
+        * Fault injection - Add delay to request to see how system responds
+        * Telemetry collection - Graphana + Dotviz/graph
+        * Policy enforcement
+* Flannel - L2 network fabric for containers, designed for Kubernetes
+    * https://github.com/coreos/flannel#flannel
+    * virtual network that gives a subnet to each host for use with container runtimes
+        * Kubernetes assume that each container (pod) has a unique, routable IP inside the cluster
+        * this reduces the complexity of doing port mapping
+* Calico - L3 container networking provider and network policy engine
     * https://www.projectcalico.org//
     * provides network policy solution for connecting Kubernetes pods
     * can be deployed without encapsulation or overlays. 
     * provides security policy for Kubernetes pods via its distributed firewall.
     * can also be run in policy enforcement mode in conjunction with other networking solutions such as Flannel, aka canal
-* Flannel - network fabric for containers, designed for Kubernetes
-    * https://github.com/coreos/flannel#flannel
-    * virtual network that gives a subnet to each host for use with container runtimes
-        * Kubernetes assume that each container (pod) has a unique, routable IP inside the cluster
-        * this reduces the complexity of doing port mapping
-* Canal -  Policy based networking for cloud native applications
+* Canal - Composition of calico and flannel plugins
+    * Policy based networking for cloud native applications
     * https://github.com/projectcalico/canal
     * allow users to easily deploy Calico and flannel networking together as a unified networking solution
 * Aqua - Container Security Company
@@ -108,3 +110,13 @@
     * Runtime Profile
     * Container Firewall
     * User access control
+* Minikube - Run K8S locally
+    * runs a single-node Kubernetes cluster inside a VM on your laptop
+    * https://kubernetes.io/docs/getting-started-guides/minikube/
+* OpenShift - Enterprise Kubernetes
+    * Adds tools on top of Kubernetes
+    * By Redhat
+    * OpenShift Origin - OSS version of OpenShift
+* Kubespray - Deploys a K8S Cluster
+    * Can deploy to AWS, GCE, Azure, OpenStack or Baremetal
+    * https://github.com/kubernetes-incubator/kubespray

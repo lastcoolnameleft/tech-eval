@@ -60,3 +60,6 @@
     * https://gogs.io/
 * Jenkins - OSS CI tool
 * Spinnaker - OSS CD tool
+* Fabric8 - Development Pipeline platform for K8S
+    * Build, test, deploy containers with approval blocking
+    * Feels like Spinnaker for containers

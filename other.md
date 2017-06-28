@@ -21,4 +21,7 @@
 * Firebase - Mobile platform for rapid development (Google)
 * USBRedir - protocol for sending usb device traffic over a network connection
     * https://www.spice-space.org/page/UsbRedir
-
+* 3Scale - API Management
+    * By Redhat - https://www.3scale.net/
+    * Features
+        * Access control, rate limiting, analytics, billing, payments, 
