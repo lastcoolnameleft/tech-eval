@@ -13,3 +13,7 @@
         * Bash
         * Azure CLI
         * CloudFoundary CLI
+* Hadoop
+    * Azure has great, AWS is expensive.  IBM is decent.
+    * AWS was cheap to bring in data, expensive for egress
+    * Azure lets you only pay for storage, not storage + compute

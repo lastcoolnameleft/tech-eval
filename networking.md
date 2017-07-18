@@ -19,3 +19,7 @@
 * Bind - https://www.isc.org/downloads/bind/
     * Widely used
     * Lin or Win
+* Envoy - C++ L7 Proxy + Communications Bus
+    * Supports HTTP/2 + Load Balancing
+    * By Lyft
+    * https://lyft.github.io/envoy/

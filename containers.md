@@ -21,12 +21,14 @@
             * https://docs.docker.com/enterprise/
         * Docker Registry - Docker image repository
         * Docker Store - Store for Trusted Docker images
-        * Docker Swarm - Standalone clustering tool
+        * Docker Swarm Mode - Standalone clustering tool
             * Pools docker hosts and exposes as one
+            * Very confusing naming convention
         * Docker Machine - CLI tool for managing hosts with Docker Engine
     * Legacy
-        * Swarm Mode - Cluster Mgmt + orchestrator
-            * Replaced by Docker Swarm
+        * Swarm - Cluster Mgmt + orchestrator
+            * Replaced by Docker Swarm Mode
+            * Very confusing naming convention
         * Docker Toolbox - Installs Docker Engine, Docker Compose, Docker Machine, Kitematic 
             * Replaced by Docker for Win/Mac
         * boot2docker - lighteight Linux distro for Mac & Win
@@ -120,3 +122,11 @@
 * Kubespray - Deploys a K8S Cluster
     * Can deploy to AWS, GCE, Azure, OpenStack or Baremetal
     * https://github.com/kubernetes-incubator/kubespray
+* Heapster - Compute Resource Usage Analysis and Monitoring of Container Clusters
+* Docker-sync - Sync files to docker containers for dev
+    * http://docker-sync.io/
+    * Boilerplate setup:  https://github.com/EugenMayer/docker-sync-boilerplate
+* cAdvisor - Analyzes resource usage and performance characteristics of running containers.
+    * Container Advisor - By Google
+* Inspector - Kubernetes pod inspector
+    * https://github.com/kelseyhightower/inspector/

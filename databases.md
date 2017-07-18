@@ -42,6 +42,9 @@
 * SQLServer
     * Litespeed - https://www.quest.com/products/litespeed-for-sql-server/
         * Fast backup and recovery sol'n
-		
-	
-	
+* Debezium - Stream database changes
+    * http://debezium.io/
+    * OSS distributed platform for change data captureop
+* Robo 3T
+    * GUI for MongoDB
+    * Formerly Robomono 
