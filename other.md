@@ -25,3 +25,16 @@
     * By Redhat - https://www.3scale.net/
     * Features
         * Access control, rate limiting, analytics, billing, payments, 
+* nip.io - Dead simple wildcard DNS for any IP
+* MODX - OSS PHP CMS
+    * Simplesearch - search component for ModX
+* GLUU - Open Source Identity & Access Mgmt
+    * https://www.gluu.org/
+    * AuthZ & AuthN
+    * Supports OAuth, OpenID Connect, SAML
+* Okta - SaaS Identity Management Provider
+* Opentracing.io - vendor-neutral open standard for distributed tracing
+    * Part of CNCF
+    * Works with zipkin.io
+* Zipkin.io - Distributed tracing system
+* Jaeger - Distributed Tracing System

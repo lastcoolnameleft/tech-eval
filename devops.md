@@ -58,12 +58,22 @@
     * Standard way of connecting apps (Stateful and Stateless apps)
 * Gogs - self-hosted Git service
     * https://gogs.io/
+    * Language: Go
 * Jenkins - OSS CI tool
 * Spinnaker - OSS CD tool
     * By Netflix
 * Fabric8 - Development Pipeline platform for K8S
     * Build, test, deploy containers with approval blocking
     * Feels like Spinnaker for containers
+    * Components
+        * Config Map Controller - Controls configs of
+        * Expose Controller - Resp. for mapping of services b/w Fabric8. Can communicate b/w services with domain names
+            * If on Azure, don't forget to change service type to Load Balancer
+        * Fabric8 - Glue
+        * Fabric8 Force - Scaffolding
+        * Gogs, Jenkins, Nexus (Docker Registry)
+    * https://github.com/chrisvugrinec/azure-fabric8-with-acsonk8
 * Screwdriver - OSS CD Tool
     * By Yahoo
     * https://github.com/screwdriver-cd/screwdriver
+* Wildfly - CI platform by Redhat

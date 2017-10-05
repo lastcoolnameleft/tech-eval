@@ -48,3 +48,6 @@
 * Robo 3T
     * GUI for MongoDB
     * Formerly Robomono 
+* Cloud Firestone
+    * By Google, NoSQL document db
+    * Includes client libs, global scale, live sync & Offline support

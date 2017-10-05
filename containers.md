@@ -87,9 +87,11 @@
     * Connect, Manage and Secure Microservices
     * Features
         * Traffic management
-            * Config Route Request - route based upon src/dest/header/cookie
+            * Config Route Request - route based upon src, dest, header, and/or cookie
+            * Used for A/B Testing, Canary Releases, Staged Rollouts with % split
         * Fault injection - Add delay to request to see how system responds
         * Telemetry collection - Graphana + Dotviz/graph
+        * Circuit Breaker - Limit upon max connections
         * Policy enforcement
 * Flannel - L2 network fabric for containers, designed for Kubernetes
     * https://github.com/coreos/flannel#flannel
@@ -102,6 +104,7 @@
     * can be deployed without encapsulation or overlays. 
     * provides security policy for Kubernetes pods via its distributed firewall.
     * can also be run in policy enforcement mode in conjunction with other networking solutions such as Flannel, aka canal
+    * https://www.projectcalico.org/demo
 * Canal - Composition of calico and flannel plugins
     * Policy based networking for cloud native applications
     * https://github.com/projectcalico/canal
@@ -119,6 +122,18 @@
     * Adds tools on top of Kubernetes
     * By Redhat
     * OpenShift Origin - OSS version of OpenShift
+        * Not recommended for production
+        * Same binaries at OCP, but ahead of OCP (stable)
+    * Openshift Online - multi-tenant cloud-based container platform, managed by RH
+    * Openshift Online - single-tenant cloud-based container platform, managed by RH
+    * Openshift Container Platform - 
+        * 3-4 months behind
+    * Concepts
+        * Bastion Node
+        * Infra Nodes
+        * Application Nodes
+        * Master Nodes
+    * Openshift.io - CI/CD Platform 
 * Kubespray - Deploys a K8S Cluster
     * Can deploy to AWS, GCE, Azure, OpenStack or Baremetal
     * https://github.com/kubernetes-incubator/kubespray
@@ -130,3 +145,20 @@
     * Container Advisor - By Google
 * Inspector - Kubernetes pod inspector
     * https://github.com/kelseyhightower/inspector/
+* Portworx - Container Storage solution
+    * Pooled & s/w defined
+    * Storage virtualization - serves virtual volumes
+    * Features: Backup, Snapshots
+    * Container focused
+        * Deploys as containers
+        * Docker volume driver
+        * Scheduler aware
+        * per-volume encryption
+        * If scheduler moves container, volume moves with it
+    * Lighthouse - UI
+        * Need Reverse Proxy for accessibility
+    * Similar to GlusterFSa
+* K8 Guard - https://github.com/k8guard/
+    * Audit system for K8S
+* Ark - https://github.com/heptio/ark
+    * Manages K8S disaster recovery for cluster resources and persistent volumes
